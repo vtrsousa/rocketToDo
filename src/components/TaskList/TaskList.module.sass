@@ -1,0 +1,58 @@
+@import '../../sass/_variables'
+
+.formAddTaks
+    form
+        display: flex
+        gap: 1rem
+        margin: -12px 0 0 0
+
+        input
+            width: 40rem
+            height: 3.375rem
+            border: 1px solid $gray-700
+            border-radius: 8px
+            padding: 1rem
+            background: $gray-500
+            color: $gray-300
+
+            &::placeholder
+                color: $gray-300
+
+        button
+            width: 5.625rem
+            height: 3.25rem
+            display: flex
+            justify-content: center
+            align-items: center
+            gap: 0.3rem
+            color: $white
+            border: none
+            border-radius: 8px
+            background: $blue
+            transition: background-color 0.1s
+
+            &:hover
+                background: $blue-dark
+                transition: background-color 0.1s
+.taskCount
+    height: 3rem 
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-bottom: 1px solid $gray-300
+    margin: 2rem 0  0
+
+    p
+        font: 700 0.875rem 'Inter', sans-serif
+        color: $blue
+        
+    span
+        color: $white
+        margin: 0 0.2rem
+        padding: 2px 8px
+        background: $gray-400
+        border-radius: 10px
+
+
+@media only screen and (min-width : 320px)
+    
